@@ -5,12 +5,13 @@ import { FontAwesome5 } from "@expo/vector-icons";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
 import PostContainer from "../containers/PostContainer";
-import Account from "../screens/Account";
+import AccountStackNavigator from "./AccountStackNavigator";
 
 const Tab = createBottomTabNavigator();
 
 const MainTabNavigator = (props) => {
   //Optional props deconstruction for readability
+  //Use currentUser to reference app's user in e.g. AccountStackNavigator
   const { currentUser, logoutHandler } = props;
 
   return (
@@ -36,7 +37,7 @@ const MainTabNavigator = (props) => {
       <Tab.Screen name="Posts" component={PostContainer} />
       <Tab.Screen
         name="Account"
-        children={() => <Account logoutHandler={logoutHandler} />}
+        children={() => <AccountStackNavigator logoutHandler={logoutHandler} />}
       />
     </Tab.Navigator>
   );
