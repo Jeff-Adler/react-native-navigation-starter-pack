@@ -10,9 +10,14 @@ class Signup extends React.Component {
 
   onChangeText = (name) => (text) => this.setState({ [name]: text });
 
+  pressHandler = () => {
+    const { navigation, signupHandler } = this.props;
+    signupHandler(this.state);
+    navigation.pop();
+  };
+
   render() {
     const { username, password } = this.state;
-    const { navigation, signupHandler } = this.props;
     return (
       <View style={styles.container}>
         <Input
@@ -26,7 +31,7 @@ class Signup extends React.Component {
           onChangeText={this.onChangeText("password")}
           value={password}
         />
-        <Button title="Submit" onPress={() => signupHandler(this.state)} />
+        <Button title="Submit" onPress={this.pressHandler} />
       </View>
     );
   }

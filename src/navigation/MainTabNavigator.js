@@ -34,7 +34,6 @@ const MainTabNavigator = (props) => {
       }}
     >
       <Tab.Screen name="Posts" component={PostContainer} />
-      {/* Pass props to children of TabNavigator using TabNavigator's children prop */}
       <Tab.Screen
         name="Account"
         children={() => <Account logoutHandler={logoutHandler} />}
