@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Button, StyleSheet } from "react-native";
 
-const Account = (props) => {
+const Logout = (props) => {
   const { logoutHandler } = props;
 
   return (
@@ -20,4 +20,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Account;
+export default Logout;
