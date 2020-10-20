@@ -38,6 +38,4 @@ PostContainer is where any API calls to, in this case posts, should go. PostStac
 
 ## Usage
 
-The app foll
-
-A basic app that first asks the user to Login. Clicking ‘submit’ allows them to submit their username and password, while clicking Signup brings the user to a Signup page, where they can add a new username and password. Signing up a new user will automatically bring the user to the login page.
+The
