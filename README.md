@@ -38,4 +38,22 @@ PostContainer is where any API calls to, in this case posts, should go. PostStac
 
 ## Usage
 
-The
+Toggle between Login and Signup:
+
+![Login](./screenshots/Login.png?raw=true "Login")
+![Signup](./screenshots/Signup.png?raw=true "Signup")
+
+Once logged-in, toggle between the Post list page and the logout page:
+
+![PostList](./screenshots/PostList.png?raw=true "PostList")
+![Logout](./screenshots/Logout.png?raw=true "Logout")
+
+Finally, click a post in the Post list to enter the post list show page:
+
+![Post](./screenshots/Post.png?raw=true "Post")
+
+## Comments
+
+Hope this is useful!
+
+Always open to comments and questions, so reach out!
