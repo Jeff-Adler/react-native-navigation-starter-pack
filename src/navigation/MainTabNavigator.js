@@ -44,3 +44,4 @@ const MainTabNavigator = (props) => {
 };
 
 export default MainTabNavigator;
+
