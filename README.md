@@ -30,7 +30,7 @@ npm start
 
 The app has the following component hierarchy and navigation structure:
 
-![Component Hierarchy](./scnreenshots/App_Component_Hierarchy.png?raw=true "Component Hierarchy")
+![Component Hierarchy](./screenshots/App_Component_Hierarchy.png?raw=true "Component Hierarchy")
 
 App toggles between LoginStackNavigator and MainTabNavigator based on the value of isSignedIn, a field in App's state. Once a user is logged-in, isSignedIn will be set to true, and MainTabNavigator will load. Once MainTabNavigator is loaded, the user can toggle between the PostContainer and AccountStackNavigator.
 
